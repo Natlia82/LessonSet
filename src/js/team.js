@@ -1,4 +1,4 @@
-class Team {
+export default class Team {
     constructor() {
         this.member = new Set();
     }
