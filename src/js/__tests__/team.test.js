@@ -20,3 +20,9 @@ test('replay character', () => {
     rezult.toArray();
     expect(rezult).toEqual({ "member": ["one", "two", "three"] });
 });
+
+test('Boom!', () => {
+    const rezult = new Team();
+    rezult.add('one');
+    expect(() => { rezult.add('one'); }).toThrow('такой персонаж уже существует');
+});
